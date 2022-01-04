@@ -1,6 +1,6 @@
 #!/bin/sh
 
-ssh  -O StrictHostKeyChecking=no ubuntu@172.31.37.142 <<EOF
+ssh -O StrictHostKeyChecking=no ubuntu@172.31.37.142 <<EOF
     cd ~/node-app
     git pull origin master
     curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
